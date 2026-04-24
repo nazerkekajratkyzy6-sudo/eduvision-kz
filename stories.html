@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мәтіндер | EduVision KZ</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <span>📚</span>
+    <div>
+      <h1>Мәтіндер каталогы</h1>
+      <p>Притча, әңгіме, ертегі, назидание</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Басты бет</a>
+    <a href="gallery.html">Галерея</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h2>Мәтінді таңдаңыз</h2>
+
+  <div class="filters">
+    <button class="active" onclick="filterStories('all', this)">Барлығы</button>
+    <button onclick="filterStories('1-4', this)">1–4 сынып</button>
+    <button onclick="filterStories('5-7', this)">5–7 сынып</button>
+    <button onclick="filterStories('8-11', this)">8–11 сынып</button>
+  </div>
+
+  <div id="storiesList" class="cards"></div>
+</section>
+
+<script src="js/stories-data.js"></script>
+<script src="js/stories.js"></script>
+
+</body>
+</html>
