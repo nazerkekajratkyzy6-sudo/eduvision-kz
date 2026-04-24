@@ -469,3 +469,6 @@ button:hover {
 .modal.active {
   display: flex;
 }
+.card {
+  animation: fadeUp 0.6s ease;
+}
