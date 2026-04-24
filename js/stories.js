@@ -11,13 +11,13 @@ function renderStories() {
     card.href = `story.html?id=${story.id}`;
     card.className = "card";
 
-    card.innerHTML = `
-      <div class="icon">📘</div>
-      <h3>${story.title}</h3>
-      <p><strong>${story.type}</strong></p>
-      <p>${story.theme}</p>
-      <p>${story.age} сынып</p>
-    `;
+   card.innerHTML = `
+  <div class="icon">📘</div>
+  <h3>${story.title}</h3>
+  <p>${story.type}</p>
+  <p>${story.theme}</p>
+  <button>Открыть</button>
+`;
 
     list.appendChild(card);
   });
