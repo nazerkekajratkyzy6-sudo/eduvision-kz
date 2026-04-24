@@ -622,3 +622,15 @@ input {
     display: none;
   }
 }
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
