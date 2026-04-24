@@ -8,124 +8,180 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">📚 EduVision KZ</div>
-  <nav>
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-icon">📚</div>
+    <strong>EduVision KZ</strong>
+  </div>
+
+  <nav class="nav">
     <a href="index.html">Басты бет</a>
     <a href="stories.html">Мәтіндер</a>
     <a href="instructions.html">Нұсқаулық</a>
     <a href="gallery.html">Галерея</a>
-    <a href="teacher.html">Мұғалім</a>
+    <a href="teacher.html">Мұғалім кабинеті</a>
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <span class="badge">Бастауыш сыныпқа арналған платформа</span>
-    <h1>EduVision KZ</h1>
-    <p>
-      Оқу, шығармашылық, технология және оқушы нәтижелерін біріктіретін
-      заманауи білім беру платформасы.
-    </p>
+<main>
 
-    <div class="buttons">
-      <a href="stories.html" class="btn">Мәтіндерді бастау</a>
-      <a href="instructions.html" class="btn-outline">Нұсқаулық көру</a>
+  <section class="hero-pro">
+    <div class="hero-copy">
+      <span class="pill">Бастауыш сыныпқа арналған платформа</span>
+      <h1>EduVision KZ</h1>
+      <p>
+        Оқу, шығармашылық, технология және оқушы нәтижелерін біріктіретін
+        заманауи білім беру платформасы.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="stories.html">📖 Мәтіндерді бастау</a>
+        <a class="btn-light" href="instructions.html">🧭 Нұсқаулық көру</a>
+      </div>
     </div>
-  </div>
-</section>
 
-<section class="author-section">
+    <div class="hero-visual">
+      <div class="book-stack">
+        <div class="book book1">AI</div>
+        <div class="book book2">Оқу</div>
+        <div class="book book3">Story</div>
+      </div>
+      <div class="floating-icon icon-one">🎨</div>
+      <div class="floating-icon icon-two">🎬</div>
+      <div class="floating-icon icon-three">🌍</div>
+    </div>
+  </section>
 
-  <!-- Фото -->
-  <img src="images/author.jpg" class="author-img">
+  <section class="author-panel">
+    <div class="author-photo">
+      <img src="https://res.cloudinary.com/dtdq8ydwe/image/upload/v1776937466/author_cpvalc.jpg" alt="Автор курса">
+    </div>
 
-  <!-- Инфо -->
-  <div class="author-info">
-    <h2>Автор курса</h2>
-    <h3>Ажахметова Зульфира Битановна</h3>
-    <p>
-      "Акжарская школа-интернат-колледж имени М.Ауезова" КГУ
-    </p>
-    <p>
-      Бұл платформа бастауыш сынып оқушыларының оқу, түсіну,
-      шығармашылық және цифрлық дағдыларын дамытуға арналған.
-    </p>
+    <div class="author-info">
+      <span class="section-label">Автор курса</span>
+      <h2>Ажахметова Зульфира Битановна</h2>
+      <p class="school">
+        "Ақжар мектеп-интернат-колледжі<br>
+        М. Әуезов атындағы" КММ
+      </p>
+      <p>
+        Бұл платформа бастауыш сынып оқушыларының оқу, түсіну,
+        шығармашылық және цифрлық дағдыларын дамытуға арналған.
+      </p>
+    </div>
 
-    <!-- Видео -->
-    <div class="author-video">
+    <div class="author-videos">
+      <h3>🎥 Автор видеолары</h3>
 
-      <div class="video-card">
-        <video controls>
-          <source src="videos/author-media1.mp4" type="video/mp4">
+      <div class="video-row">
+        <video controls poster="https://res.cloudinary.com/dtdq8ydwe/image/upload/v1776937466/author_cpvalc.jpg">
+          <source src="https://res.cloudinary.com/dtdq8ydwe/video/upload/v1776936083/author-media1_utisox.mp4" type="video/mp4">
+        </video>
+
+        <video controls poster="https://res.cloudinary.com/dtdq8ydwe/image/upload/v1776937466/author_cpvalc.jpg">
+          <source src="https://res.cloudinary.com/dtdq8ydwe/video/upload/v1776936094/author-media2_wtvqii.mp4" type="video/mp4">
         </video>
       </div>
+    </div>
+  </section>
 
-      <div class="video-card">
-        <video controls>
-          <source src="videos/author-media2.mp4" type="video/mp4">
-        </video>
+  <section class="section">
+    <div class="section-head">
+      <h2>Мәтіндер жинағы</h2>
+      <a href="stories.html">Барлығын көру →</a>
+    </div>
+
+    <div class="book-cards">
+      <a class="book-card purple" href="story.html?id=uryukovaya-kostochka">
+        <div class="cover">🌱</div>
+        <div>
+          <h3>Урюковая косточка</h3>
+          <p>1–4 сынып · Сказка</p>
+        </div>
+      </a>
+
+      <a class="book-card blue" href="story.html?id=ispytanie-uchitelya">
+        <div class="cover">🧠</div>
+        <div>
+          <h3>Испытание учителя</h3>
+          <p>5–7 сынып · Притча</p>
+        </div>
+      </a>
+
+      <a class="book-card orange" href="story.html?id=abai-17">
+        <div class="cover">📜</div>
+        <div>
+          <h3>Слово семнадцатое</h3>
+          <p>8–11 сынып · Абай</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Платформа бөлімдері</h2>
+
+    <div class="feature-grid">
+      <a href="stories.html" class="feature-card">
+        <div class="feature-icon purple-icon">📖</div>
+        <h3>Мәтіндер</h3>
+        <p>Ертегі, әңгіме, притча және Абай назиданиялары.</p>
+      </a>
+
+      <a href="instructions.html" class="feature-card">
+        <div class="feature-icon blue-icon">🧭</div>
+        <h3>Нұсқаулық</h3>
+        <p>AI, фото, видео, AR/VR, мультфильм жасау қадамдары.</p>
+      </a>
+
+      <a href="gallery.html" class="feature-card">
+        <div class="feature-icon green-icon">🎬</div>
+        <h3>Галерея</h3>
+        <p>Оқу, шығармашылық, технология және нәтиже жұмыстары.</p>
+      </a>
+
+      <a href="teacher.html" class="feature-card">
+        <div class="feature-icon yellow-icon">👩‍🏫</div>
+        <h3>Мұғалім кабинеті</h3>
+        <p>Оқушылардың жүктеген жұмыстарын көру.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Оқу бағыты</h2>
+
+    <div class="steps">
+      <div class="step">
+        <span>1</span>
+        <h3>Мәтінді оқу</h3>
+        <p>Оқушы мәтінді толық оқиды және мазмұнын түсінеді.</p>
       </div>
 
+      <div class="step">
+        <span>2</span>
+        <h3>Тапсырма орындау</h3>
+        <p>Қайта айту, жалғастыру, диалог құру, көрініске бөлу.</p>
+      </div>
+
+      <div class="step">
+        <span>3</span>
+        <h3>Шығармашылық жұмыс</h3>
+        <p>Сурет, театр, видео, AR/VR, мультфильм жасау.</p>
+      </div>
+
+      <div class="step">
+        <span>4</span>
+        <h3>Нәтиже жүктеу</h3>
+        <p>Дайын жұмыс платформаға жүктеліп, мұғалімге көрінеді.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-</section>
-
-<section class="section">
-  <h2>Платформа бөлімдері</h2>
-
-  <div class="cards">
-    <a href="stories.html" class="card">
-      <h3>📖 Мәтіндер</h3>
-      <p>Ертегі, әңгіме, притча және Абай назиданиялары.</p>
-    </a>
-
-    <a href="instructions.html" class="card">
-      <h3>🧭 Нұсқаулық</h3>
-      <p>AI, фото, видео, AR/VR, мультфильм жасау қадамдары.</p>
-    </a>
-
-    <a href="gallery.html" class="card">
-      <h3>🎬 Галерея</h3>
-      <p>Оқу, шығармашылық, технология және нәтиже жұмыстары.</p>
-    </a>
-
-    <a href="teacher.html" class="card">
-      <h3>👩‍🏫 Мұғалім кабинеті</h3>
-      <p>Оқушылардың жүктеген жұмыстарын көру.</p>
-    </a>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Оқу бағыты</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>1️⃣ Мәтінді оқу</h3>
-      <p>Оқушы мәтінді толық оқиды және мазмұнын түсінеді.</p>
-    </div>
-
-    <div class="card">
-      <h3>2️⃣ Тапсырма орындау</h3>
-      <p>Қайта айту, жалғастыру, диалог құру, көрініске бөлу.</p>
-    </div>
-
-    <div class="card">
-      <h3>3️⃣ Шығармашылық жұмыс</h3>
-      <p>Сурет, театр, видео, AR/VR, мультфильм жасау.</p>
-    </div>
-
-    <div class="card">
-      <h3>4️⃣ Нәтиже жүктеу</h3>
-      <p>Дайын жұмыс платформаға жүктеліп, мұғалімге көрінеді.</p>
-    </div>
-  </div>
-</section>
+</main>
 
 <footer>
-  <p>EduVision KZ © Авторлық білім беру платформасы</p>
+  EduVision KZ © Авторлық білім беру платформасы
 </footer>
 
 </body>
