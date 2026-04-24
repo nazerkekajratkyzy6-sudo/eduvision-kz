@@ -1,35 +1,14 @@
-const list = document.getElementById("storiesList");
-let currentAge = "all";
+const container = document.getElementById("stories");
 
-function renderStories() {
-  list.innerHTML = "";
+STORIES.forEach(story => {
+  const div = document.createElement("div");
+  div.className = "card";
 
-  STORIES.forEach(story => {
-    if (currentAge !== "all" && story.age !== currentAge) return;
+  div.innerHTML = `
+    <h3>${story.title}</h3>
+    <p>${story.theme}</p>
+    <a href="story.html?id=${story.id}">Оқу</a>
+  `;
 
-    const card = document.createElement("a");
-    card.href = `story.html?id=${story.id}`;
-    card.className = "card";
-
-   card.innerHTML = `
-  <div class="icon">📘</div>
-  <h3>${story.title}</h3>
-  <p>${story.type}</p>
-  <p>${story.theme}</p>
-  <button>Открыть</button>
-`;
-
-    list.appendChild(card);
-  });
-}
-
-function filterStories(age, btn) {
-  currentAge = age;
-
-  document.querySelectorAll(".filters button").forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
-
-  renderStories();
-}
-
-renderStories();
+  container.appendChild(div);
+});
