@@ -751,3 +751,74 @@ footer {
     padding: 22px;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
+
+main,
+.section,
+.container {
+  max-width: 1180px;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-grid,
+.book-cards,
+.steps {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.feature-card,
+.book-card,
+.step {
+  min-width: 0;
+}
+
+.feature-card {
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  align-items: center;
+}
+
+.feature-card p,
+.step p {
+  line-height: 1.5;
+  word-break: normal;
+}
+
+.steps {
+  text-align: left;
+}
+
+.step {
+  padding: 20px;
+  background: #eef4ff;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: 46px 1fr;
+}
+
+.section h2 {
+  text-align: left;
+  margin-left: 0;
+}
+
+@media (max-width: 1000px) {
+  .feature-grid,
+  .book-cards,
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .feature-grid,
+  .book-cards,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
