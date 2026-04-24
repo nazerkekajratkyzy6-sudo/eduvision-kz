@@ -42,6 +42,22 @@ function filterMedia(category, btn) {
   btn.classList.add("active");
 
   renderMedia();
+if (item.type === "image") {
+  media = `<img src="${item.src}" onclick="openModal('${item.src}','image')">`;
+} else {
+  media = `<video src="${item.src}" onclick="openModal('${item.src}','video')"></video>`;
+}
+renderMedia();
+function openModal(src, type) {
+  const modal = document.getElementById("modal");
+
+  modal.innerHTML = type === "image"
+    ? `<img src="${src}">`
+    : `<video src="${src}" controls autoplay></video>`;
+
+  modal.classList.add("active");
 }
 
-renderMedia();
+function closeModal() {
+  document.getElementById("modal").classList.remove("active");
+}
