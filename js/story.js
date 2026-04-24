@@ -1,28 +1,7 @@
-function saveWork() {
-  const input = document.querySelector('input[type="file"]');
-  const files = input.files;
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
 
-  if (!files.length) {
-    alert("Файл таңдаңыз");
-    return;
-  }
+const story = STORIES.find(s => s.id === id);
 
-  let works = JSON.parse(localStorage.getItem("works")) || [];
-
-  for (let file of files) {
-    const reader = new FileReader();
-
-    reader.onload = function(e) {
-      works.push({
-        type: file.type.startsWith("image") ? "image" : "video",
-        src: e.target.result
-      });
-
-      localStorage.setItem("works", JSON.stringify(works));
-    };
-
-    reader.readAsDataURL(file);
-  }
-
-  alert("Жұмыс портфолиоға сақталды");
-}
+document.getElementById("title").innerText = story.title;
+document.getElementById("text").innerText = story.text;
