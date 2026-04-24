@@ -472,3 +472,109 @@ button:hover {
 .card {
   animation: fadeUp 0.6s ease;
 }
+.lead {
+  color: #64748b;
+  max-width: 760px;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.tool-tabs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.tool-tabs button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tool-tabs button.active,
+.tool-tabs button:hover {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 22px;
+}
+
+.tool-card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: 0.3s;
+}
+
+.tool-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.13);
+}
+
+.tool-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.tool-top a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tool-badge {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.tool-card h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.tool-card ol {
+  padding-left: 18px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.prompt-box {
+  margin-top: 14px;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+}
+
+.prompt-box p {
+  color: #334155;
+  margin: 8px 0 12px;
+  line-height: 1.5;
+}
+
+.prompt-box button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 9px 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
