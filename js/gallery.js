@@ -21,8 +21,10 @@ function renderMedia() {
     card.className = "media-card";
 
     const media = item.type === "image"
-      ? `<img src="${item.src}" alt="${getCategoryLabel(item.category)}">`
-      : `<video src="${item.src}" controls preload="metadata"></video>`;
+      ? `<img src="${item.src}" alt="${getCategoryLabel(item.category)}" onclick="openModal('${item.src}', 'image')">`
+      : `<video controls preload="metadata">
+           <source src="${item.src}" type="video/mp4">
+         </video>`;
 
     card.innerHTML = `
       ${media}
@@ -42,22 +44,22 @@ function filterMedia(category, btn) {
   btn.classList.add("active");
 
   renderMedia();
-if (item.type === "image") {
-  media = `<img src="${item.src}" onclick="openModal('${item.src}','image')">`;
-} else {
-  media = `<video src="${item.src}" onclick="openModal('${item.src}','video')"></video>`;
 }
-renderMedia();
+
 function openModal(src, type) {
   const modal = document.getElementById("modal");
 
   modal.innerHTML = type === "image"
-    ? `<img src="${src}">`
+    ? `<img src="${src}" alt="Фото">`
     : `<video src="${src}" controls autoplay></video>`;
 
   modal.classList.add("active");
 }
 
 function closeModal() {
-  document.getElementById("modal").classList.remove("active");
+  const modal = document.getElementById("modal");
+  modal.classList.remove("active");
+  modal.innerHTML = "";
 }
+
+renderMedia();
