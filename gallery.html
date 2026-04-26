@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Галерея | EduVision KZ</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">
-    <span>🎬</span>
-    <div>
-      <h1>Галерея</h1>
-      <p>Оқушылар жұмыстары</p>
-    </div>
-  </div>
+  <div class="logo">📚 EduVision KZ</div>
 
   <nav>
     <a href="index.html">Басты бет</a>
     <a href="stories.html">Мәтіндер</a>
+    <a href="instructions.html">Нұсқаулық</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="teacher.html">Мұғалім</a>
   </nav>
 </header>
 
 <section class="section">
-  <h2>Фото және видео материалдар</h2>
+  <h2>Галерея</h2>
+  <p class="lead">Оқушылардың жұмыстары, видео және фото материалдар</p>
 
   <div class="filters">
     <button class="active" onclick="filterMedia('all', this)">Барлығы</button>
@@ -37,8 +35,12 @@
   <div id="gallery" class="media-grid"></div>
 </section>
 
+<!-- MODAL -->
+<div id="modal" class="modal" onclick="closeModal()"></div>
+
+<!-- JS -->
 <script src="js/media-data.js"></script>
 <script src="js/gallery.js"></script>
-<div id="modal" class="modal" onclick="closeModal()"></div>
+
 </body>
 </html>
