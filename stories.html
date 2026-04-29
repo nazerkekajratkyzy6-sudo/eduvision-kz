@@ -2,18 +2,78 @@
 <html lang="kk">
 <head>
   <meta charset="UTF-8">
-  <title>Мәтіндер</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мәтіндер жинағы</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="container">
-  <h1 class="title">📚 Мәтіндер жинағы</h1>
+<header class="header">
+  <div class="logo">📚 EduVision</div>
+  <nav>
+    <a href="index.html">Басты бет</a>
+    <a href="stories.html">Мәтіндер</a>
+    <a href="instructions.html">Нұсқаулық</a>
+    <a href="gallery.html">Галерея</a>
+  </nav>
+</header>
 
-  <div id="stories" class="grid"></div>
-</div>
+<main class="section">
+  <h1 id="pageTitle">Мәтіндер жинағы</h1>
 
-<script src="js/stories-data.js"></script>
+  <div class="filters">
+    <button class="lang-btn active" data-lang="kz">Қазақша</button>
+    <button class="lang-btn" data-lang="ru">Русский</button>
+  </div>
+
+  <div class="filters">
+    <button class="cat-btn active" data-category="all">Барлығы</button>
+    <button class="cat-btn" data-category="story">Сказки и рассказы</button>
+    <button class="cat-btn" data-category="parable">Притчи</button>
+    <button class="cat-btn" data-category="wisdom">Назидания</button>
+  </div>
+
+  <div id="storiesGrid" class="grid"></div>
+</main>
+
+<script>
+  window.STORIES = [];
+</script>
+
+<script src="js/data/stories-clean-1.js"></script>
+<script src="js/data/stories-clean-2.js"></script>
+<script src="js/data/stories-clean-3.js"></script>
+<script src="js/data/stories-clean-4.js"></script>
+<script src="js/data/stories-clean-5.js"></script>
+<script src="js/data/stories-clean-6.js"></script>
+<script src="js/data/stories-clean-7.js"></script>
+<script src="js/data/stories-clean-8.js"></script>
+<script src="js/data/stories-clean-9.js"></script>
+<script src="js/data/stories-clean-10.js"></script>
+<script src="js/data/stories-clean-11.js"></script>
+<script src="js/data/stories-clean-12.js"></script>
+<script src="js/data/stories-clean-13.js"></script>
+<script src="js/data/stories-clean-14.js"></script>
+<script src="js/data/stories-clean-15.js"></script>
+<script src="js/data/stories-clean-16-fixed.js"></script>
+<script src="js/data/stories-clean-17.js"></script>
+<script src="js/data/stories-clean-18.js"></script>
+
+<script src="js/data/parable-clean-1.js"></script>
+<script src="js/data/parable-clean-2.js"></script>
+<script src="js/data/parable-clean-3.js"></script>
+<script src="js/data/parable-clean-4.js"></script>
+<script src="js/data/parable-clean-5.js"></script>
+<script src="js/data/parable-clean-6.js"></script>
+<script src="js/data/parable-clean-7.js"></script>
+<script src="js/data/parable-clean-8.js"></script>
+<script src="js/data/parable-clean-9.js"></script>
+<script src="js/data/parable-clean-10.js"></script>
+<script src="js/data/parable-clean-11.js"></script>
+
+<script src="js/data/wisdom-clean-1.js"></script>
+<script src="js/data/wisdom-clean-2.js"></script>
+
 <script src="js/stories.js"></script>
 
 </body>
