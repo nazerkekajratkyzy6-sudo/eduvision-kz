@@ -2,30 +2,73 @@
 <html lang="kk">
 <head>
   <meta charset="UTF-8">
-  <title>Мәтін</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мәтінді оқу</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">📚 EduVision KZ</div>
+  <div class="logo">📖 EduVision</div>
   <nav>
-    <a href="index.html">Басты бет</a>
-    <a href="stories.html">Мәтіндер</a>
-    <a href="instructions.html">Нұсқаулық</a>
-    <a href="gallery.html">Галерея</a>
-    <a href="teacher.html">Мұғалім</a>
+    <a href="stories.html">← Артқа</a>
   </nav>
 </header>
 
-<div class="story-page">
-  <a class="btn-light" href="stories.html">← Мәтіндерге қайту</a>
-  <h1 id="title"></h1>
-  <p id="meta"></p>
-  <div id="text" class="story-text"></div>
-</div>
+<main class="story-page">
+  <div class="filters">
+    <button class="lang-btn" data-lang="kz">Қазақша</button>
+    <button class="lang-btn" data-lang="ru">Русский</button>
+  </div>
 
-<script src="js/stories-data.js"></script>
+  <p id="storyMeta" class="story-meta"></p>
+  <h1 id="storyTitle"></h1>
+  <div id="storyText" class="story-text"></div>
+
+  <section class="tasks-box">
+    <h2 id="tasksTitle">Тапсырмалар</h2>
+    <ul id="storyTasks"></ul>
+  </section>
+</main>
+
+<script>
+  window.STORIES = [];
+</script>
+
+<script src="js/data/stories-clean-1.js"></script>
+<script src="js/data/stories-clean-2.js"></script>
+<script src="js/data/stories-clean-3.js"></script>
+<script src="js/data/stories-clean-4.js"></script>
+<script src="js/data/stories-clean-5.js"></script>
+<script src="js/data/stories-clean-6.js"></script>
+<script src="js/data/stories-clean-7.js"></script>
+<script src="js/data/stories-clean-8.js"></script>
+<script src="js/data/stories-clean-9.js"></script>
+<script src="js/data/stories-clean-10.js"></script>
+<script src="js/data/stories-clean-11.js"></script>
+<script src="js/data/stories-clean-12.js"></script>
+<script src="js/data/stories-clean-13.js"></script>
+<script src="js/data/stories-clean-14.js"></script>
+<script src="js/data/stories-clean-15.js"></script>
+<script src="js/data/stories-clean-16-fixed.js"></script>
+<script src="js/data/stories-clean-17.js"></script>
+<script src="js/data/stories-clean-18.js"></script>
+
+<script src="js/data/parable-clean-1.js"></script>
+<script src="js/data/parable-clean-2.js"></script>
+<script src="js/data/parable-clean-3.js"></script>
+<script src="js/data/parable-clean-4.js"></script>
+<script src="js/data/parable-clean-5.js"></script>
+<script src="js/data/parable-clean-6.js"></script>
+<script src="js/data/parable-clean-7.js"></script>
+<script src="js/data/parable-clean-8.js"></script>
+<script src="js/data/parable-clean-9.js"></script>
+<script src="js/data/parable-clean-10.js"></script>
+<script src="js/data/parable-clean-11.js"></script>
+
+<script src="js/data/wisdom-clean-1.js"></script>
+<script src="js/data/wisdom-clean-2.js"></script>
+
 <script src="js/story.js"></script>
 
 </body>
