@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Мұғалім кабинеті | EduVision KZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -22,9 +24,20 @@
 <section class="section">
   <h2>Мұғалім кабинеті</h2>
   <p class="lead">Оқушылардың сақталған жұмыстары осы жерде көрінеді.</p>
+
+  <!-- Firebase не подключён — работы из localStorage -->
   <div id="works" class="media-grid"></div>
 </section>
 
+<!-- Firebase (раскомментируйте когда добавите конфиг) -->
+<!--
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+-->
+
 <script src="js/teacher.js"></script>
+
 </body>
 </html>
