@@ -35,6 +35,7 @@ const MEDIA = [
 
 { type: "image", category: "results", src: "https://res.cloudinary.com/dtdq8ydwe/image/upload/v1776937467/results1_cxjnpj.jpg" },
 { type: "image", category: "results", src: "https://res.cloudinary.com/dtdq8ydwe/image/upload/v1776937490/results2_pyri2k.jpg" },
+{ type: "video", category: "results", src: "https://res.cloudinary.com/dtdq8ydwe/video/upload/VID-20261026-WA0110_jlgtm6.mp4" },
 
 /* ================= TECHNOLOGY ================= */
 
